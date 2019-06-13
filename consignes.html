@@ -6,6 +6,9 @@
     <link rel="stylesheet" type="text/css" href="theme.css">
     <link rel="stylesheet" type="text/css" href="exercice-css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Montserrat&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="exercice-jquery/ex-jquery.js"></script>
+    <script src="exercice-api/ex-api.js"></script>
 </head>
 <body>
 <header>
@@ -29,7 +32,10 @@
         <div class="wrapper">
             <h2 class="title big ex"><span>1</span>Git</h2>
             <span class="path">../test-integration/</span>
-            <p>Même si ce n'est qu'une formalité pour aussi bon développeur que toi, créé un repo sur GitHub ou GitLab du dossier complet sur la branche master. Ensuite, créé une branche exercice. <br>A chaque fois que tu feras un excercice, fait un commit nommé ainsi : exercice#1, exercice#2, exercice#3, etc. C'est tout !</p>
+            <p>Même si ce n'est qu'une formalité pour aussi bon développeur que toi, créé un repo sur GitHub ou GitLab
+                du dossier complet sur la branche master. Ensuite, créé une branche exercice. <br>A chaque fois que tu
+                feras un excercice, fait un commit nommé ainsi : exercice#1, exercice#2, exercice#3, etc. C'est tout !
+            </p>
             <span class="help">Dès que tu auras finis tout les excercices, envois nous un mail avec le lien de ton repo</span>
         </div>
     </section>
@@ -46,7 +52,8 @@
         <div class="wrapper">
             <h2 class="title big ex"><span>3</span>Les metas</h2>
             <span class="path">/exercice-html/article.html</span>
-            <p>Toujours dans le fichier indiqué ci-dessus, complète le head. Ne t'en fais fais, mets des contenus factices. Mais attention à ne rien oublier !</p>
+            <p>Toujours dans le fichier indiqué ci-dessus, complète le head. Ne t'en fais fais, mets des contenus
+                factices. Mais attention à ne rien oublier !</p>
             <span class="help">N'oublis pas le responsive et référencement</span>
         </div>
     </section>
@@ -54,8 +61,10 @@
         <div class="wrapper">
             <h2 class="title big ex"><span>4</span>Css</h2>
             <span class="path">/exercice-css/styles.css</span>
-            <p>Dans le fichier mentionné ci-dessus, complète, modifis ou supprime le css pour obtenir le même résultat que sur l'image.
-                <br>On n'attend pas du pixel perfect, simplement de bons réflexes d'intégration. Essais d'écrire le moins possible de css, mais attention, <strong>interdit de modifier le HTML</strong> !</p>
+            <p>Dans le fichier mentionné ci-dessus, complète, modifis ou supprime le css pour obtenir le même résultat
+                que sur l'image.
+                <br>On n'attend pas du pixel perfect, simplement de bons réflexes d'intégration. Essais d'écrire le
+                moins possible de css, mais attention, <strong>interdit de modifier le HTML</strong> !</p>
             <span class="help">Ne te prend pas le chou avec les prefixes des navigateurs</span>
             <div class="css-container">
                 <div class="parent">
@@ -95,6 +104,33 @@
                     <span class="help">Pense à jouer avec les transitions</span>
                 </div>
             </div>
+        </div>
+    </section>
+    <section class="bg-light">
+        <div class="wrapper jquery-container">
+            <h2 class="title big ex"><span>5</span>jQuery</h2>
+            <span class="path">/exercice-jquery/ex-jquery.js</span>
+            <p>Tu aimes jQuery ? C'est le moment de nous le prouver ! <br>
+                Quand le document est prêt, ajoute la classe "show" au lien ci-dessous.<br>
+                Au clic sur ce lien, chaque élément de la liste doit devenir rouge.</p>
+            <a href="#" class="first-link">Lien</a>
+            <ul>
+                <li>Hello</li>
+                <li>Hola</li>
+                <li>Hey</li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <div class="wrapper">
+            <h2 class="title big ex"><span>6</span>JavaScript & API & JSON</h2>
+            <span class="path">/exercice-api/ex-api.html</span>
+            <p>Pour cette exercice on va utilisé <a class="link" href="https://pokeapi.co/">PokéAPI</a>.<br>
+            En modifiant le fichier mentionné ci-dessus, fais nous une petite requête pour remplacer les valeurs par celle du Pokémon de ton choix !</p>
+            <p class="pokemon-name">Nom de pokémon</p>
+            <p class="pokemon-order">Rang du pokémon</p>
+            <p class="pokemon-weight">Poid du pokémon</p>
+            <span class="help">Pense au temps de chargement</span>
         </div>
     </section>
 </main>

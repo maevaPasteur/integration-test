@@ -242,6 +242,7 @@ body {
 p {
     line-height: 25px;
 }
+
 .path {
     opacity: .5;
     margin-bottom: 10px;
@@ -258,6 +259,7 @@ p {
     margin-right: 10px;
     vertical-align: middle;
 }
+
 .help {
     color: #e7484a;
     font-size: 15px;
@@ -267,22 +269,27 @@ p {
 .title {
     font-family: 'Archivo Black', sans-serif;
 }
+
 .title.center {
     text-transform: uppercase;
     font-size: 16px;
     margin-bottom: 20px;
 }
+
 .title.big {
     font-size: 40px;
     margin-bottom: 20px;
 }
+
 .bg-light {
     background-color: #f6f9fb;
 }
+
 .bg-dark {
     background-color: #242c37;
     color: white;
 }
+
 header {
     padding: 200px 0;
     text-align: center;
@@ -325,9 +332,11 @@ header p {
 .intro {
     text-align: center;
 }
+
 .ex {
     position: relative;
 }
+
 .ex span {
     font-size: 40px;
     display: inline-block;
@@ -339,6 +348,7 @@ header p {
 .bg-light .ex span {
     color: #d6d9dd;
 }
+
 .css-container .parent {
     margin-top: 40px;
     padding-top: 40px;
@@ -348,8 +358,27 @@ header p {
 .css-container .parent .item {
     padding: 40px 0;
 }
+
 .css-container .parent:nth-of-type(3) img {
     max-width: 200px;
     height: auto;
 }
 
+.jquery-container .first-link {
+    margin: 20px 0 10px;
+    display: block;
+}
+
+.jquery-container .first-link.show {
+    font-weight: 900;
+}
+
+.jquery-container li:before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    background-color: #cccccc;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 50%;
+}
