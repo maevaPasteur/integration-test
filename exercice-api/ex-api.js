@@ -9,9 +9,10 @@
             pokemonOrderField = $('.pokemon-order');
 
 
-        pokemonNameField.text(getPokemon(name));
-        pokemonWeightField.text(getPokemon(weight));
-        pokemonOrderField.text(getPokemon(order));
+        // pokemonNameField.text(getPokemon(name));
+        // pokemonWeightField.text(getPokemon(weight));
+        // pokemonOrderField.text(getPokemon(order));
+
     });
 
     function getPokemon(attribute) {
