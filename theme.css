@@ -1,0 +1,355 @@
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+    background-clip: padding-box;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    word-break: break-word;
+}
+
+html, body {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-family: sans-serif;
+    position: relative;
+}
+
+img {
+    user-select: none;
+}
+
+iframe {
+    display: block;
+    border: 0;
+}
+
+html {
+    font-size: 100%;
+    height: 100%;
+}
+
+body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+span {
+    display: block;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+address, caption, cite, code, dfn, var {
+    font-style: normal;
+    font-weight: 400;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+caption, th {
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: 400;
+}
+
+q:before, q:after {
+    content: '';
+}
+
+abbr, acronym {
+    border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+
+audio, canvas, progress, video {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+[hidden], template {
+    display: none;
+}
+
+a {
+    background: transparent;
+    color: inherit;
+    text-decoration: none;
+}
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+b, strong {
+    font-weight: 700;
+}
+
+dfn {
+    font-style: italic;
+}
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+small {
+    font-size: 80%;
+}
+
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -.5em;
+}
+
+sub {
+    bottom: -.25em;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+pre {
+    overflow: auto;
+}
+
+code, kbd, pre, samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+input, textarea, button {
+    background: 0;
+    border: 0;
+    border-radius: 0;
+}
+
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+}
+
+button {
+    overflow: visible;
+}
+
+button, select {
+    text-transform: none;
+}
+
+button[disabled], html input[disabled] {
+    cursor: default;
+}
+
+input, button, textarea {
+    line-height: normal;
+}
+
+input[type='number']::-webkit-inner-spin-button, input[type='number']::-webkit-outer-spin-button {
+    height: auto;
+}
+
+input[type='search'] {
+    -webkit-appearance: textfield;
+}
+
+input[type='search']::-webkit-search-cancel-button, input[type='search']::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+legend {
+    border: 0;
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+    resize: vertical;
+}
+
+optgroup {
+    font-weight: 700;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+::-ms-clear, ::-ms-reveal {
+    display: none;
+    height: 0;
+    width: 0;
+}
+
+img, svg:not(:root) {
+    -ms-interpolation-mode: bicubic;
+    display: block;
+    image-rendering: optimizeQuality;
+    max-width: 100%;
+}
+
+input[type='text'], input[type='button'], input[type='email'], input[type='password'], input[type='submit'], input[type='tel'], input[type='url'], input[type='number'], input[type='reset'], textarea, button {
+    -webkit-appearance: none;
+}
+
+button, input[type='button'], input[type='reset'], input[type='submit'] {
+    cursor: pointer;
+    user-select: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+    font-size: 18px;
+}
+
+p {
+    line-height: 25px;
+}
+.path {
+    opacity: .5;
+    margin-bottom: 10px;
+}
+
+.help:before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-image: url(assets/images/help.svg);
+    background-size: contain;
+    display: inline-block;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.help {
+    color: #e7484a;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.title {
+    font-family: 'Archivo Black', sans-serif;
+}
+.title.center {
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.title.big {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.bg-light {
+    background-color: #f6f9fb;
+}
+.bg-dark {
+    background-color: #242c37;
+    color: white;
+}
+header {
+    padding: 200px 0;
+    text-align: center;
+    background-image: url(https://www.fidesio.com/sites/all/themes/agencedigitale/assets/img/sample/back_2.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.wrapper {
+    max-width: 800px;
+    display: block;
+    margin: auto;
+}
+
+section {
+    padding: 100px 0;
+}
+
+header img {
+    width: 107px;
+    height: auto;
+    display: block;
+    margin: 0 auto 50px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+header h2 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+header p {
+    margin-top: 20px;
+}
+
+.intro {
+    text-align: center;
+}
+.ex {
+    position: relative;
+}
+.ex span {
+    font-size: 40px;
+    display: inline-block;
+    text-align: center;
+    color: #eaedf2;
+    margin-right: 15px;
+}
+
+.bg-light .ex span {
+    color: #d6d9dd;
+}
+.css-container .parent {
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: solid 2px #eaedf2;
+}
+
+.css-container .parent .item {
+    padding: 40px 0;
+}
+.css-container .parent:nth-of-type(3) img {
+    max-width: 200px;
+    height: auto;
+}
+
