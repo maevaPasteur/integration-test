@@ -12,6 +12,7 @@
     <script src="exercice-api/ex-api.js"></script>
     <script src="exercice-js/ex-js.js"></script>
     <script src="exercice-correction/ex-correction.js"></script>
+    <meta name="viewport" content="initial-scale=1">
 </head>
 <body>
 <header>
@@ -21,6 +22,7 @@
         <h1 class="title">Bonjour cher candidat</h1>
         <h2>Tout d'abord, félicitation d'avoir été sélectionné pour passer ce test ! </h2>
     </div>
+    <img class="down" src="assets/images/down.svg">
 </header>
 <main>
     <section class="bg-dark intro">
@@ -35,7 +37,8 @@
         <div class="wrapper">
             <h2 class="title big ex"><span>1</span>Git</h2>
             <span class="path">../test-integration/</span>
-            <p>Même si ce n'est qu'une formalité pour un aussi bon développeur que toi, créé un repo sur GitHub ou GitLab
+            <p>Même si ce n'est qu'une formalité pour un aussi bon développeur que toi, créé un repo sur GitHub ou
+                GitLab
                 du dossier complet sur la branche master. Ensuite, créé une branche exercice. <br>A chaque fois que tu
                 feras un excercice, fait un commit nommé ainsi : exercice#1, exercice#2, exercice#3, etc. C'est tout !
             </p>
@@ -65,15 +68,23 @@
             <h2 class="title big ex"><span>4</span>Css</h2>
             <span class="path">/exercice-css/styles.css</span>
             <p>Dans le fichier mentionné ci-dessus, complète, modifis ou supprime le css pour obtenir le même résultat
-                que sur l'image.
+                que sur les images. Pour chacune de ces images, son code html figure en dessous.<br>
                 <br>On n'attend pas du pixel perfect, simplement de bons réflexes d'intégration. Essais d'écrire le
-                moins possible de css, mais attention, <strong>interdit de modifier le HTML</strong> !</p>
+                moins possible de css, mais attention, <strong>interdit de modifier le HTML</strong> !<br><br>
+                Actualise la page à chaque fois que tu modifis le css et tu pourras visualiser tes changements. Pour
+                t'aider n'hésite pas à inspecter le code html présent sous les images.
+            </p>
             <span class="help">Ne te prend pas le chou avec les prefixes des navigateurs</span>
             <div class="css-container">
+                <!--<iframe-->
+                <!--src="http://plnkr.co/edit/dsmqD80kWLndyNMQRYv9?p=preview"-->
+                <!--frameborder="0"-->
+                <!--width="100%"-->
+                <!--height="480px"-->
+                <!--&gt;</iframe>-->
                 <div class="parent">
-                    <h3>Un peu d'alignement</h3>
                     <img class="item" src="assets/images/ex-css-1.png">
-                    <p>À toi</p>
+                    <p>À ton tour, reproduis l'image en ajoutant des propriétés CSS aux trois div ci-dessous. </p>
                     <div class="item">
                         <div></div>
                         <div></div>
@@ -81,24 +92,23 @@
                     </div>
                 </div>
                 <div class="parent">
-                    <h3>Si tu modifis le html ça va barder !</h3>
                     <img class="item" src="assets/images/ex-css-2.png">
-                    <p>À toi</p>
+                    <p>Reproduis l'image en ajoutant autant de CSS que tu souhaites à la div ci-dessous, mais sans
+                        toucher à HTML !</p>
                     <div class="item">
                         <div></div>
                     </div>
                 </div>
                 <div class="parent">
-                    <h3>Fontello ça te parle ?</h3>
                     <img class="item" src="assets/images/ex-css-3.png">
-                    <p>À toi</p>
+                    <p>Fontello ça te parle ? Transforme ce p comme sur l'image :</p>
                     <div class="item">
                         <p>Contact</p>
                     </div>
                     <span class="help">\F0E0</span>
                 </div>
                 <div class="parent">
-                    <h3>Bonus ! Mets en nous plein la vue avec des effets de ton choix au survol</h3>
+                    <h3>Mets en nous plein la vue avec les effets de ton choix au survol de ces liens !</h3>
                     <div class="item">
                         <a href="#">Lien 1</a>
                         <a href="#"><span>Lien 2</span></a>
@@ -115,7 +125,8 @@
             <span class="path">/exercice-jquery/ex-jquery.js</span>
             <p>Tu aimes jQuery ? C'est le moment de nous le prouver ! <br>
                 Quand le document est prêt, ajoute la classe "show" au lien ci-dessous.<br>
-                Au clic sur ce lien, chaque élément de la liste doit devenir rouge. S'ils sont déjà rouges, ils doivent devenir noir.</p>
+                Au clic sur ce lien, chaque élément de la liste doit devenir rouge. S'ils sont déjà rouges, ils doivent
+                devenir noir.</p>
             <p class="first-link">Lien</p>
             <ul>
                 <li>Hello</li>
@@ -129,7 +140,8 @@
             <h2 class="title big ex"><span>6</span>JavaScript & API & JSON</h2>
             <span class="path">/exercice-api/ex-api.js</span>
             <p>Pour cette exercice on va utilisé <a class="link" href="https://pokeapi.co/">PokéAPI</a>.<br>
-            En modifiant le fichier mentionné ci-dessus, fais nous une petite requête pour remplacer les valeurs par celle du Pokémon de ton choix !</p>
+                En modifiant le fichier mentionné ci-dessus, fais nous une petite requête pour remplacer les valeurs par
+                celle du Pokémon de ton choix !</p>
             <ul class="pokemon-field">
                 <li>Nom de pokémon : <strong class="pokemon-name">Ditto</strong></li>
                 <li>Rang du pokémon : <strong class="pokemon-order">197</strong></li>
@@ -143,23 +155,39 @@
             <h2 class="title big ex"><span>7</span>Simple, rapide & efficace</h2>
             <span class="path">/exercice-js/ex-js.js</span>
             <span class="path">/exercice-js/ex-js.css</span>
-            <p>Pour cet exercice, modifis directement les deux fichiers mentionnés ci-dessus. Nous ne prêtons pas attention à l'UI, nous voulons simplement voir tes méthodes d'intégration.</p>
+            <p>Pour cet exercice, modifis directement les deux fichiers mentionnés ci-dessus. Nous ne prêtons pas
+                attention à l'UI, nous voulons simplement voir tes méthodes d'intégration.</p>
             <div class="parent">
                 <h3>Commence par nous faire un slider responsive</h3>
                 <div class="item container-slider-img">
                     <ul class="slider-img">
-                        <li><img src="https://cdn.welcometothejungle.co/uploads/image/file/5468/155619/small_e80121cc-c9d1-405f-9b98-8d90f9f25de9.png" alt="équipe fidesio"></li>
-                        <li><img src="https://cdn.welcometothejungle.co/uploads/image/file/5113/155619/small_dcf687fe-4375-4a63-9de8-1bda4105d38e.jpg" alt="équipe fidesio"></li>
-                        <li><img src="https://media.licdn.com/media-proxy/ext?w=800&h=800&hash=9%2B6lTTeW%2Fa8BLF4Y3bJ1cTq2gzs%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta5g-0R6nlh8Tw1It6a2FowGz60oISIfYC2G8G2f1spyfNT-tdoDSeLehpEtOdSsEmBJkcrG-GGGiSp7AcI-eF7YD38zjesakPlIAXCk6k1xo6NQ8HShh5rDgCvnxPX8LgM9ZSw2eB4HtbGAyGgIbr-CfHLL-C20gnASvVfnXDc0QWfoywtdKz0Zjkpz3H95qnqtH2U589waZpZrOYz4_yaKxW32GBQdgMEHhCN9P6oO-5hO4hVbFz17glKOlK6zzH4o-43Wq7sbgRVO3iytiu04gyC0z0s8lEmKEj40nvUCCGvgwRjOdv_jfaC-t1egj2R8VrumnFDG2dEBFmjZvFag" alt="équipe fidesio"></li>
-                        <li><img src="https://cdn.welcometothejungle.co/uploads/video/image/6099/155619/small_fidesio_video_JDkZaj6.jpg" alt="équipe fidesio"></li>
-                        <li><img src="https://cdn.welcometothejungle.co/uploads/image/file/5101/155619/large_72d9f63b-2666-45a9-8154-699a4b114ae6.jpg" alt="équipe fidesio"></li>
-                        <li><img src="https://cdn.welcometothejungle.co/uploads/image/file/5102/155619/large_e39bbb5c-2fad-49ba-b44c-b5fe80469697.jpg" alt="équipe fidesio"></li>
-                        <li><img src="https://cdn.welcometothejungle.co/uploads/image/file/5101/155619/large_bc86a89b-95a5-46aa-be92-03a7234bfae5.jpg" alt="équipe fidesio"></li>
+                        <li><img
+                                src="https://cdn.welcometothejungle.co/uploads/image/file/5468/155619/small_e80121cc-c9d1-405f-9b98-8d90f9f25de9.png"
+                                alt="équipe fidesio"></li>
+                        <li><img
+                                src="https://cdn.welcometothejungle.co/uploads/image/file/5113/155619/small_dcf687fe-4375-4a63-9de8-1bda4105d38e.jpg"
+                                alt="équipe fidesio"></li>
+                        <li><img
+                                src="https://media.licdn.com/media-proxy/ext?w=800&h=800&hash=9%2B6lTTeW%2Fa8BLF4Y3bJ1cTq2gzs%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta5g-0R6nlh8Tw1It6a2FowGz60oISIfYC2G8G2f1spyfNT-tdoDSeLehpEtOdSsEmBJkcrG-GGGiSp7AcI-eF7YD38zjesakPlIAXCk6k1xo6NQ8HShh5rDgCvnxPX8LgM9ZSw2eB4HtbGAyGgIbr-CfHLL-C20gnASvVfnXDc0QWfoywtdKz0Zjkpz3H95qnqtH2U589waZpZrOYz4_yaKxW32GBQdgMEHhCN9P6oO-5hO4hVbFz17glKOlK6zzH4o-43Wq7sbgRVO3iytiu04gyC0z0s8lEmKEj40nvUCCGvgwRjOdv_jfaC-t1egj2R8VrumnFDG2dEBFmjZvFag"
+                                alt="équipe fidesio"></li>
+                        <li><img
+                                src="https://cdn.welcometothejungle.co/uploads/video/image/6099/155619/small_fidesio_video_JDkZaj6.jpg"
+                                alt="équipe fidesio"></li>
+                        <li><img
+                                src="https://cdn.welcometothejungle.co/uploads/image/file/5101/155619/large_72d9f63b-2666-45a9-8154-699a4b114ae6.jpg"
+                                alt="équipe fidesio"></li>
+                        <li><img
+                                src="https://cdn.welcometothejungle.co/uploads/image/file/5102/155619/large_e39bbb5c-2fad-49ba-b44c-b5fe80469697.jpg"
+                                alt="équipe fidesio"></li>
+                        <li><img
+                                src="https://cdn.welcometothejungle.co/uploads/image/file/5101/155619/large_bc86a89b-95a5-46aa-be92-03a7234bfae5.jpg"
+                                alt="équipe fidesio"></li>
                     </ul>
                 </div>
             </div>
             <div class="parent">
-                <h3>Personnalise moi ce select ! Je ne veux plus de bordure. Son fond doit être rouge, et le fond de chaque option doit être gris si pair, blanc si impaire. </h3>
+                <h3>Personnalise moi ce select ! Je ne veux plus de bordure. Son fond doit être rouge, et le fond de
+                    chaque option doit être gris si pair, blanc si impaire. </h3>
                 <div class="item">
                     <select id="pet-select">
                         <option value="">--Please choose an option--</option>
@@ -173,7 +201,8 @@
                 </div>
             </div>
             <div class="parent">
-                <h3>Change nous l'apparence de ce calendrier. Libre à toi de faire comme bon te semble, on veut du changement !</h3>
+                <h3>Change nous l'apparence de ce calendrier. Libre à toi de faire comme bon te semble, on veut du
+                    changement !</h3>
                 <div class="item">
                     <input type="date"
                            value="2018-07-22">
@@ -186,32 +215,251 @@
             <h2 class="title big ex"><span>6</span>Correction de code</h2>
             <span class="path">/exercice-correction/ex-correction.js</span>
             <p>Un développeur, ça passe plus souvent son temps à debugger qu'à développer...<br>
-            Corrige le fichier js mentionné ci-dessus. Que la force soit avec toi.</p>
+                Corrige le fichier js mentionné ci-dessus. Que la force soit avec toi.</p>
             <div class="item correction-ex">
                 <p class="move-title">Montrer / cacher le texte</p>
                 <p class="move-text">Je suis un petit texte magique qui apparaît puis disparait.</p>
             </div>
         </div>
     </section>
-    <section class=" bg-light">
+    <section class="bg-light work-use">
         <div class="wrapper">
             <h2 class="title big ex"><span>7</span>Méthode de travail</h2>
-            <span class="path">consignes.html</span>
-            <p>Explique nous comment tu commences une intégration habituellement.<br>
-                Ton starter kit de prédilection !<br>
-                Quels outils, compilateur, structure, compression, minification, medias queries, préfixes, Sass, installation de librairie, etc. Complète directement le paragraphe ci-dessous.</p>
-            <div class="item answer">
-                <h3>Ta réponse :</h3>
-                <p>Lors d'une intégration, j'utilise...</p>
-            </div>
+            <form>
+                <p></p>
+                <fieldset class="form-field">
+                    <legend class="legend">Quels outils utilises-tu pour générer la structure d'un projet ?</legend>
+                    <div class="container-check">
+                        <div>
+                            <input type="checkbox" id="webpack" name="structure" value="webpack">
+                            <label for="webpack">Webpack</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="parcel" name="structure" value="parcel">
+                            <label for="parcel">Parcel</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="rollup" name="structure" value="rollup">
+                            <label for="rollup">Rollup</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="gulp" name="structure" value="gulp">
+                            <label for="gulp">Gulp</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="react" name="structure" value="react">
+                            <label for="react">React</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="angular" name="structure" value="angular">
+                            <label for="angular">Angular</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="vue" name="structure" value="vue">
+                            <label for="vue">Vue</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="fusebox" name="structure" value="fusebox">
+                            <label for="fusebox">Fuse-box</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="browserify" name="structure" value="browserify">
+                            <label for="browserify">Browserify</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="grunt" name="structure" value="grunt">
+                            <label for="grunt">Grunt</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="npm" name="structure" value="npm">
+                            <label for="npm">Npm</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="brunch" name="structure" value="brunch">
+                            <label for="brunch">Brunch</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="yarn" name="structure" value="yarn">
+                            <label for="yarn">Yarn</label>
+                        </div>
+                        <div class="wa">
+                            <input type="checkbox" id="other" name="structure" value="other">
+                            <label for="other">Autre :</label>
+                            <input type="text" id="otherValue" name="other">
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="form-field bt">
+                    <p class="legend">Choisis ton outil préféré et explique nous comment tu t'y prends :</p>
+                    <div>
+                        <label for="structure_projet">Créer la structure du projet</label>
+                        <textarea id="structure_projet" name="structure_projet"></textarea>
+                    </div>
+                    <div>
+                        <label for="compiler_css">Compiler .scss ou .sass</label>
+                        <textarea id="compiler_css" name="compiler_css"></textarea>
+                    </div>
+                    <div>
+                        <label for="min_js">Minifier le JavaScript</label>
+                        <textarea id="min_js" name="min_js"></textarea>
+                    </div>
+                    <div>
+                        <label for="favicon">Générer les favicons</label>
+                        <textarea id="favicon" name="favicon"></textarea>
+                    </div>
+                    <div>
+                        <label for="prefix">Ajouter les préfixes css selon les navigateurs</label>
+                        <textarea id="prefix" name="prefix"></textarea>
+                    </div>
+                    <div>
+                        <label for="lib_js">Ajouter des librairies JavaScript</label>
+                        <textarea id="lib_js" name="lib_js"></textarea>
+                    </div>
+                </div>
+                <div class="form-field bt lib-favorite">
+                    <p class="legend">Tes librairies ou plugins favoris :</p>
+                    <div>
+                        <label for="slider">Pour créer un slider</label>
+                        <input type="text" id="slider" name="slider">
+                    </div>
+                    <div>
+                        <label for="graph">Pour créer des graphiques</label>
+                        <input type="text" id="graph" name="graph">
+                    </div>
+                    <div>
+                        <label for="anim_scroll">Pour faire apparaitre progressivement le contenu d'une page au scroll
+                            :</label>
+                        <input type="text" id="anim_scroll" name="anim_scroll">
+                    </div>
+                    <div>
+                        <label for="scrollbar">Pour customiser une scrollbar dans une div :</label>
+                        <input type="text" id="scrollbar" name="scrollbar">
+                    </div>
+                    <div>
+                        <label for="chouchous">D'autres chouchous ?</label>
+                        <input type="text" id="chouchous" name="chouchous">
+                    </div>
+                </div>
+                <fieldset class="form-field secret-xp">
+                    <legend class="legend">As-tu d'autres qualités secrètes ?</legend>
+                    <div class="container-check two">
+                        <div>
+                            <input type="checkbox" id="3d" name="structure" value="3d">
+                            <label for="3d">Je fais de la 3D</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="photoshop" name="structure" value="photoshop">
+                            <label for="photoshop">Photoshop est mon ami</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="php" name="structure" value="php">
+                            <label for="php">Je fais aussi du PHP</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="symfony" name="structure" value="symfony">
+                            <label for="symfony">J'ai déjà travaillé sur Symfony</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="magento" name="structure" value="magento">
+                            <label for="magento">J'ai déjà travaillé sur Magento</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="svg" name="structure" value="svg">
+                            <label for="svg">Je sais animer des SVG</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="without_jquery" name="structure" value="without_jquery">
+                            <label for="without_jquery">Je sais me passer de jQuery</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="babyfoot" name="structure" value="babyfoot">
+                            <label for="babyfoot">Je joue au babyfoot sans roulette</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="linux" name="structure" value="linux">
+                            <label for="linux">Mon ordi perso est sous Linux</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="nodejs" name="structure" value="nodejs">
+                            <label for="nodejs">Je fais du NodeJS</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="form-field bt lib-favorite">
+                    <p class="legend">Un peu de Unix, courage !</p>
+                    <div>
+                        <label for="unix_1">Pour accéder au sous dossier /dev</label>
+                        <input type="text" id="unix_1" name="unix_1">
+                    </div>
+                    <div>
+                        <label for="readme">Créer un fichier README.md contenant "hello world"</label>
+                        <input type="text" id="readme" name="readme">
+                    </div>
+                </div>
+                <div class="form-field bt true-false">
+                    <p class="legend">Je peux utiliser</p>
+                    <p><code>width: fit-content</code></p>
+                    <div>
+                        <input type="radio" name="boolean1" id="true_1" value="true" checked><label for="true_1">Non</label>
+                        <input type="radio" name="boolean1" id="false_1" value="false"><label for="false_1">Oui</label>
+                    </div>
+                    <p><code>object-fit: fill</code></p>
+                    <div>
+                        <input type="radio" name="boolean2" id="true_2" value="true" checked><label for="true_2">Non</label>
+                        <input type="radio" name="boolean2" id="false_2" value="false"><label for="false_2">Oui</label>
+                    </div>
+                    <p><code>height: 100vh</code></p>
+                    <div>
+                        <input type="radio" name="boolean3" id="true_3" value="true" checked><label for="true_3">Non</label>
+                        <input type="radio" name="boolean3" id="false_3" value="false"><label for="false_3">Oui</label>
+                    </div>
+                    <p><code>flex-wrap: wrap</code></p>
+                    <div>
+                        <input type="radio" name="boolean4" id="true_4" value="true" checked><label for="true_4">Non</label>
+                        <input type="radio" name="boolean4" id="false_4" value="false"><label for="false_4">Oui</label>
+                    </div>
+                    <p><code>pointeur-event: none</code></p>
+                    <div>
+                        <input type="radio" name="boolean5" id="true_5" value="true" checked><label for="true_5">Non</label>
+                        <input type="radio" name="boolean5" id="false_5" value="false"><label for="false_5">Oui</label>
+                    </div>
+                    <p><code>position: sticky</code></p>
+                    <div>
+                        <input type="radio" name="boolean6" id="true_6" value="true" checked><label for="true_6">Non</label>
+                        <input type="radio" name="boolean6" id="false_6" value="false"><label for="false_6">Oui</label>
+                    </div>
+                    <p><code>margin-top: -20px</code></p>
+                    <div>
+                        <input type="radio" name="boolean7" id="true_7" value="true" checked><label for="true_7">Non</label>
+                        <input type="radio" name="boolean7" id="false_7" value="false"><label for="false_7">Oui</label>
+                    </div>
+                    <p><code>color: #000</code></p>
+                    <div>
+                        <input type="radio" name="boolean8" id="true_8" value="true" checked><label for="true_8">Non</label>
+                        <input type="radio" name="boolean8" id="false_8" value="false"><label for="false_8">Oui</label>
+                    </div>
+                    <p><code>left: calc(20%-50px*2)</code></p>
+                    <div>
+                        <input type="radio" name="boolean9" id="true_9" value="true" checked><label for="true_9">Non</label>
+                        <input type="radio" name="boolean9" id="false_9" value="false"><label for="false_9">Oui</label>
+                    </div>
+                </div>
+                <div>
+                    <button type="submit">Envoyer le formulaire</button>
+                </div>
+            </form>
+            <!--<div class="item answer">-->
+            <!--<h3>Ta réponse :</h3>-->
+            <!--<p>Lors d'une intégration, j'utilise...</p>-->
+            <!--</div>-->
         </div>
     </section>
     <section class="bg-dark intro">
         <div class="wrapper">
             <h2 class="title center">Félicitation</h2>
             <p>Tu as terminé ce test d'intégration !<br>
-            Maintenant n'oublis pas de tout commiter et surtout, envois nous un email avec le lien de ton repo Git :
-            <a class="link-email" href="#">xxxxxx@fidesio.com</a></p>
+                Maintenant n'oublis pas de tout commiter et surtout, envois nous un email avec le lien de ton repo Git :
+                <a class="link-email" href="#">xxxxxx@fidesio.com</a></p>
         </div>
     </section>
 </main>
