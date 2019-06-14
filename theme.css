@@ -297,6 +297,7 @@ header {
     background-size: cover;
     background-position: center;
     color: white;
+    border: solid 40px white;
 }
 
 .wrapper {
@@ -349,13 +350,16 @@ header p {
     color: #d6d9dd;
 }
 
-.css-container .parent {
+.css-container .parent,
+.lib-container .parent {
     margin-top: 40px;
     padding-top: 40px;
     border-top: solid 2px #eaedf2;
 }
 
-.css-container .parent .item {
+.css-container .parent .item,
+.lib-container .parent .item,
+.correction-ex {
     padding: 40px 0;
 }
 
@@ -387,4 +391,38 @@ header p {
     margin: 40px 0;
 }
 
+.move-title {
+    cursor: pointer;
+    padding: 0 15px;
+    background-color: #e7484a;
+    color: white;
+    font-weight: 900;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 3px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    transition: background-color ease-out .3s;
+}
+.move-title:hover {
+    background-color: #b92e30;
+}
 
+.item.answer h3 {
+    color: #e7484a;
+    margin-top: 40px;
+}
+.answer p {
+    padding: 20px;
+    margin-top: 20px;
+    border: solid 1px #cccccc;
+    font-style: italic;
+    opacity: .8;
+}
+
+.link-email {
+    font-weight: 900;
+}

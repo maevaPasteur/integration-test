@@ -5,10 +5,13 @@
     <title>Test d'intégration</title>
     <link rel="stylesheet" type="text/css" href="theme.css">
     <link rel="stylesheet" type="text/css" href="exercice-css/styles.css">
+    <link rel="stylesheet" type="text/css" href="exercice-js/ex-js.css">
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Montserrat&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="exercice-jquery/ex-jquery.js"></script>
     <script src="exercice-api/ex-api.js"></script>
+    <script src="exercice-js/ex-js.js"></script>
+    <script src="exercice-correction/ex-correction.js"></script>
 </head>
 <body>
 <header>
@@ -32,7 +35,7 @@
         <div class="wrapper">
             <h2 class="title big ex"><span>1</span>Git</h2>
             <span class="path">../test-integration/</span>
-            <p>Même si ce n'est qu'une formalité pour aussi bon développeur que toi, créé un repo sur GitHub ou GitLab
+            <p>Même si ce n'est qu'une formalité pour un aussi bon développeur que toi, créé un repo sur GitHub ou GitLab
                 du dossier complet sur la branche master. Ensuite, créé une branche exercice. <br>A chaque fois que tu
                 feras un excercice, fait un commit nommé ainsi : exercice#1, exercice#2, exercice#3, etc. C'est tout !
             </p>
@@ -112,8 +115,8 @@
             <span class="path">/exercice-jquery/ex-jquery.js</span>
             <p>Tu aimes jQuery ? C'est le moment de nous le prouver ! <br>
                 Quand le document est prêt, ajoute la classe "show" au lien ci-dessous.<br>
-                Au clic sur ce lien, chaque élément de la liste doit devenir rouge. S'ils sont déjà rouges, ils deviennent noir.</p>
-            <a href="#" class="first-link">Lien</a>
+                Au clic sur ce lien, chaque élément de la liste doit devenir rouge. S'ils sont déjà rouges, ils doivent devenir noir.</p>
+            <p class="first-link">Lien</p>
             <ul>
                 <li>Hello</li>
                 <li>Hola</li>
@@ -124,7 +127,7 @@
     <section>
         <div class="wrapper">
             <h2 class="title big ex"><span>6</span>JavaScript & API & JSON</h2>
-            <span class="path">/exercice-api/ex-api.html</span>
+            <span class="path">/exercice-api/ex-api.js</span>
             <p>Pour cette exercice on va utilisé <a class="link" href="https://pokeapi.co/">PokéAPI</a>.<br>
             En modifiant le fichier mentionné ci-dessus, fais nous une petite requête pour remplacer les valeurs par celle du Pokémon de ton choix !</p>
             <ul class="pokemon-field">
@@ -133,6 +136,81 @@
                 <li>Poid du pokémon : <strong class="pokemon-weight">40</strong></li>
             </ul>
             <span class="help">Pas de panique! Regarde sur internet c'est pas sorcier</span>
+        </div>
+    </section>
+    <section class="bg-light">
+        <div class="wrapper lib-container">
+            <h2 class="title big ex"><span>7</span>Simple, rapide & efficace</h2>
+            <span class="path">/exercice-js/ex-js.js</span>
+            <span class="path">/exercice-js/ex-js.css</span>
+            <p>Pour cet exercice, modifis directement les deux fichiers mentionnés ci-dessus. Nous ne prêtons pas attention à l'UI, nous voulons simplement voir tes méthodes d'intégration.</p>
+            <div class="parent">
+                <h3>Commence par nous faire un slider responsive</h3>
+                <div class="item container-slider-img">
+                    <ul class="slider-img">
+                        <li><img src="https://cdn.welcometothejungle.co/uploads/image/file/5468/155619/small_e80121cc-c9d1-405f-9b98-8d90f9f25de9.png" alt="équipe fidesio"></li>
+                        <li><img src="https://cdn.welcometothejungle.co/uploads/image/file/5113/155619/small_dcf687fe-4375-4a63-9de8-1bda4105d38e.jpg" alt="équipe fidesio"></li>
+                        <li><img src="https://media.licdn.com/media-proxy/ext?w=800&h=800&hash=9%2B6lTTeW%2Fa8BLF4Y3bJ1cTq2gzs%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta5g-0R6nlh8Tw1It6a2FowGz60oISIfYC2G8G2f1spyfNT-tdoDSeLehpEtOdSsEmBJkcrG-GGGiSp7AcI-eF7YD38zjesakPlIAXCk6k1xo6NQ8HShh5rDgCvnxPX8LgM9ZSw2eB4HtbGAyGgIbr-CfHLL-C20gnASvVfnXDc0QWfoywtdKz0Zjkpz3H95qnqtH2U589waZpZrOYz4_yaKxW32GBQdgMEHhCN9P6oO-5hO4hVbFz17glKOlK6zzH4o-43Wq7sbgRVO3iytiu04gyC0z0s8lEmKEj40nvUCCGvgwRjOdv_jfaC-t1egj2R8VrumnFDG2dEBFmjZvFag" alt="équipe fidesio"></li>
+                        <li><img src="https://cdn.welcometothejungle.co/uploads/video/image/6099/155619/small_fidesio_video_JDkZaj6.jpg" alt="équipe fidesio"></li>
+                        <li><img src="https://cdn.welcometothejungle.co/uploads/image/file/5101/155619/large_72d9f63b-2666-45a9-8154-699a4b114ae6.jpg" alt="équipe fidesio"></li>
+                        <li><img src="https://cdn.welcometothejungle.co/uploads/image/file/5102/155619/large_e39bbb5c-2fad-49ba-b44c-b5fe80469697.jpg" alt="équipe fidesio"></li>
+                        <li><img src="https://cdn.welcometothejungle.co/uploads/image/file/5101/155619/large_bc86a89b-95a5-46aa-be92-03a7234bfae5.jpg" alt="équipe fidesio"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="parent">
+                <h3>Personnalise moi ce select ! Je ne veux plus de bordure. Son fond doit être rouge, et le fond de chaque option doit être gris si pair, blanc si impaire. </h3>
+                <div class="item">
+                    <select id="pet-select">
+                        <option value="">--Please choose an option--</option>
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                        <option value="hamster">Hamster</option>
+                        <option value="parrot">Parrot</option>
+                        <option value="spider">Spider</option>
+                        <option value="goldfish">Goldfish</option>
+                    </select>
+                </div>
+            </div>
+            <div class="parent">
+                <h3>Change nous l'apparence de ce calendrier. Libre à toi de faire comme bon te semble, on veut du changement !</h3>
+                <div class="item">
+                    <input type="date"
+                           value="2018-07-22">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="wrapper">
+            <h2 class="title big ex"><span>6</span>Correction de code</h2>
+            <span class="path">/exercice-correction/ex-correction.js</span>
+            <p>Un développeur, ça passe plus souvent son temps à debugger qu'à développer...<br>
+            Corrige le fichier js mentionné ci-dessus. Que la force soit avec toi.</p>
+            <div class="item correction-ex">
+                <p class="move-title">Montrer / cacher le texte</p>
+                <p class="move-text">Je suis un petit texte magique qui apparaît puis disparait.</p>
+            </div>
+        </div>
+    </section>
+    <section class=" bg-light">
+        <div class="wrapper">
+            <h2 class="title big ex"><span>7</span>Méthode de travail</h2>
+            <p>Explique nous comment tu commences une intégration habituellement.<br>
+                Ton starter kit de prédilection!<br>
+                Quels outils, compilateur, structure, compression, minification, medias queries, Sass, installation de librairie, etc. Complète directement le paragraphe si dessous.</p>
+            <div class="item answer">
+                <h3>Ta réponse :</h3>
+                <p>Lors d'une intégration, j'utilise...</p>
+            </div>
+        </div>
+    </section>
+    <section class="bg-dark intro">
+        <div class="wrapper">
+            <h2 class="title center">Félicitation</h2>
+            <p>Tu as terminé ce test d'intégration !<br>
+            Maintenant n'oublis pas de tout commité, et surtout, envois nous un email avec le lien de ton repo Git :
+            <a class="link-email" href="#">xxxxxx@fidesio.com</a></p>
         </div>
     </section>
 </main>
