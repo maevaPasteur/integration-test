@@ -3,7 +3,7 @@
     'use strict';
 
 
-    var txt = $('.move-text');
+    var txt = $('.move-text.show');
 
     $('.move-title').click(function () {
         if ($(this).className === 'show') {
